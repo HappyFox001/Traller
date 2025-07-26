@@ -14,7 +14,7 @@
 
 ---
 
-## 🚀 项目简介
+## 项目简介
 
 你是否曾为了解一个人——他是谁、他做过什么、他在哪些地方留下过痕迹——而在无数网页、平台与社交账号之间反复横跳？
 碎片信息太多，可信信息太少。而你，只想要一个清晰的答案。
@@ -23,7 +23,7 @@
 
 Traller 是一个专注于「人物搜索与画像」的 AI 智能体。它不是传统意义上的搜索引擎，而是你的网络情报代理。你只需输入一句话、一个名字，甚至一个模糊的描述，Traller 会自动联动背后的语言模型与多源数据，追踪该人物在互联网上的数字足迹，提取核心事件与关联实体，最终生成一张清晰、可交互的知识图谱。
 
-## 📸 项目截图
+## 项目截图
 
 <!-- Arrange the two images side by side for better layout -->
 <p align="center">
@@ -31,20 +31,28 @@ Traller 是一个专注于「人物搜索与画像」的 AI 智能体。它不�
   <img src="./frontend/public/images/logos/image2.png" alt="Screenshot 2" width="45%" style="display:inline-block;" />
 </p>
 
-### ✨ 核心功能
+## 视频介绍
+
+<p align="center">
+  <!-- Add a GIF introduction for better demonstration -->
+  <img src="./frontend/public/videos/show.gif" alt="Traller Demo GIF" width="80%" />
+</p>
+
+
+### 核心功能
 
 - **多AI引擎驱动**: 集成 `Kimi K2`, `Perplexity`, `Tavily` 等多种AI服务，从不同维度搜集和分析信息。
 - **关系图谱可视化**: 自动提取关键实体（人物、组织、地点等），生成可交互的关系网络。
 - **动态探索界面**: 基于 `React` 和 `p5.js`，提供富有生命力的可视化效果和流畅的交互体验。
 - **稳定可扩展后端**: 基于 `NestJS` 构建，确保服务的高效与可靠。
 
-## 🛠️ 技术栈
+## 技术栈
 
 - **后端**: [NestJS](https://nestjs.com/), [TypeScript](https://www.typescriptlang.org/)
 - **前端**: [React](https://react.dev/), [Vite](https://vitejs.dev/), [TypeScript](https://www.typescriptlang.org/), [Tailwind CSS](https://tailwindcss.com/), [p5.js](https://p5js.org/)
 - **包管理器**: [pnpm](https://pnpm.io/)
 
-## ⚡ 快速开始 (本地运行)
+## 快速开始 (本地运行)
 
 请确保您的开发环境中已安装 [Node.js](https://nodejs.org/) (v18 或更高版本) 和 [pnpm](https://pnpm.io/)。
 
