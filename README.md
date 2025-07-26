@@ -1,103 +1,93 @@
-# 萃流 (Traller) - AI驱动的深度人物情报与关系网络探索平台
+<div align="center">
+  <img src="./frontend/public/images/logos/logo title main-64.png" alt="Traller Logo" width="128"/>
+  <p>一个可视化的智能研究代理</p>
+</div>
 
-萃流是一个先进的AI驱动的探索工具，旨在深度解析人物、公司及其错综复杂的关系网络。通过输入一个查询（如人物姓名、公司名称或相关链接），萃流能够利用大语言模型（LLM）进行深度分析，并以直观、可交互的关系图谱形式，为您呈现结构化的情报数据。
-
-![Traller UI Demo](frontend/public/images/logos/logo%20Traller(1).png)
-
----
-
-## ✨ 核心功能
-
-- **🤖 AI 深度分析**: 利用强大的语言模型（如 Google Gemini）自动从海量网络信息中提取、结构化并总结实体关系。
-- **🕸️ 可视化关系图谱**: 以动态、可交互的图谱形式展示实体间的关系，关系远近一目了然。
-- ** multifaceted 实体支持**: 支持对多种实体类型（包括人物、公司和事件）进行分析和展示。
-- **📝 详细实体洞察**: 为每个实体提供详细的背景信息、摘要、关键事件和信息来源，所有内容均由AI自动生成。
-- **💅 现代化的 UI/UX**: 采用 Vite + React 构建，界面美观、响应迅速，并拥有酷炫的 3D 动画效果。
+<div align="center">
+  <img alt="Backend" src="https://img.shields.io/badge/Backend-NestJS-ea2845?style=for-the-badge&logo=nestjs">
+  <img alt="Frontend" src="https://img.shields.io/badge/Frontend-React-61DAFB?style=for-the-badge&logo=react">
+  <img alt="Language" src="https://img.shields.io/badge/Language-TypeScript-blue?style=for-the-badge&logo=typescript">
+  <img alt="Status" src="https://img.shields.io/badge/Status-In%20Development-blue?style=for-the-badge">
+  <img alt="License" src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge">
+</div>
 
 ---
+
+## 🚀 项目简介
+
+你是否曾为了解一个人物、一个概念或一个事件，在无数个网页和文档中反复横跳，试图将碎片化的信息拼凑成完整的图像？我曾深陷其中，这正是 **Traller** 诞生的原因。
+
+**Traller** 不仅仅是一个搜索引擎。它是一个智能研究代理，旨在将繁琐的信息搜集和整理工作，变成一次直观、可视化的探索之旅。你只需要输入一个关键词——比如一个人的名字——Traller 就会动用背后强大的语言模型（如 Gemini, Perplexity），为你挖掘相关信息，并自动梳理出核心实体与它们之间的复杂关系，最终以一张动态知识图谱清晰地呈现在你面前。
+
+这个项目源于一个简单的想法：让获取知识的过程本身，也充满探索的乐趣。
+
+### ✨ 核心功能
+
+- **多AI引擎驱动**: 集成 `Kimi K2`, `Perplexity`, `Tavily` 等多种AI服务，从不同维度搜集和分析信息。
+- **关系图谱可视化**: 自动提取关键实体（人物、组织、地点等），生成可交互的关系网络。
+- **动态探索界面**: 基于 `React` 和 `p5.js`，提供富有生命力的可视化效果和流畅的交互体验。
+- **稳定可扩展后端**: 基于 `NestJS` 构建，确保服务的高效与可靠。
+
+## ⚠️ 潜在风险与道德考量
+
+我们深知，信息聚合工具在带来便利的同时，也可能被滥用，甚至触及“人肉搜索”（开盒）的道德和法律红线。Traller 的设计初衷是提高 **公开信息** 的获取和整合效率，而非侵犯个人隐私。
+
+因此，本项目在开发和未来迭代中，将严格遵守以下原则：
+
+1.  **数据来源合法性**: Traller 只聚合和处理来自 **公开渠道**（如新闻网站、百科、公共数据库等）的信息。我们不会、也绝不会尝试获取任何非公开的个人数据。
+2.  **目的限定性**: 项目的目的是辅助研究和学习，帮助用户理解事物之间的关联， **绝非** 提供用于骚扰、攻击他人的工具。
+3.  **合规路线图**: 我们正在积极探索技术和产品层面的限制措施，例如通过算法识别并 **脱敏处理** 部分个人敏感信息，并对特定类型的查询加以限制。
+
+我们致力于将 Traller 打造成一个负责任的、向善的工具，并欢迎社区就此提出建议，共同探讨技术的边界与未来。
 
 ## 🛠️ 技术栈
 
-- **后端**:
-  - [NestJS](https://nestjs.com/): 一个用于构建高效、可扩展的 Node.js 服务器端应用程序的渐进式框架。
-  - **AI 集成**: [Google Gemini](https://ai.google/discover/gemini/) (通过 [OpenRouter](https://openrouter.ai/))
-  - **语言**: TypeScript
-- **前端**:
-  - [React](https://reactjs.org/): 用于构建用户界面的 JavaScript 库。
-  - [Vite](https://vitejs.dev/): 下一代前端开发与构建工具。
-  - [Tailwind CSS](https://tailwindcss.com/): 一个功能类优先的 CSS 框架。
-  - [Framer Motion](https://www.framer.com/motion/): 一个用于 React 的动画库。
-  - [React Flow](https://reactflow.dev/): 用于构建基于节点的 UI 和应用的库。
+- **后端**: [NestJS](https://nestjs.com/), [TypeScript](https://www.typescriptlang.org/)
+- **前端**: [React](https://react.dev/), [Vite](https://vitejs.dev/), [TypeScript](https://www.typescriptlang.org/), [Tailwind CSS](https://tailwindcss.com/), [p5.js](https://p5js.org/)
 - **包管理器**: [pnpm](https://pnpm.io/)
 
----
+## ⚡ 快速开始 (本地运行)
 
-## 🚀 本地设置与运行
+请确保您的开发环境中已安装 [Node.js](https://nodejs.org/) (v18 或更高版本) 和 [pnpm](https://pnpm.io/)。
 
-### 1. 克隆项目
+### 1. 克隆仓库
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/your-username/Traller.git
 cd Traller
 ```
 
-### 2. 安装依赖
+### 2. 安装与启动
 
-本项目使用 `pnpm` 作为包管理器。请确保您已安装 `pnpm`。
-
-```bash
-# 安装 pnpm (如果尚未安装)
-npm install -g pnpm
-
-# 在项目根目录安装所有依赖
-pnpm install
-```
-`pnpm install` 会自动安装根目录、`frontend` 和 `backend` 的所有依赖。
-
-### 3. 配置 API 密钥
-
-为了让AI分析功能正常工作，您需要配置 API 密钥。
-
-- 复制 `backend/.env.example` 文件，并将其重命名为 `backend/.env`。
-- 在 `backend/.env` 文件中填入您的 API 密钥：
-
-```env
-# backend/.env
-
-# OpenRouter API Key
-# 从 https://openrouter.ai/keys 获取你的 API 密钥
-OPENROUTER_API_KEY=your_openrouter_api_key_here
-
-# Tavily API Key (可选, 但建议配置)
-# 从 https://app.tavily.com/ 获取
-TAVILY_API_KEY=your_tavily_api_key_here
-```
-
-### 4. 启动项目
-
-我们提供了便捷的脚本来一键启动和停止整个应用。
+项目根目录下的 `start.sh` 脚本会自动处理所有依赖安装和服务启动。只需执行：
 
 ```bash
-# 为脚本添加执行权限 (首次运行时需要)
-chmod +x start.sh stop.sh
-
-# 启动项目 (会同时启动前端和后端服务)
+chmod +x ./start.sh
 ./start.sh
 ```
 
-启动后，您可以访问：
-- **前端**: `http://localhost:5173`
-- **后端**: `http://localhost:3000`
+脚本将分别安装前端和后端的依赖，并以开发模式启动两个服务。
 
-### 5. 停止项目
+### 3. 访问项目
 
-```bash
-# 停止所有服务
-./stop.sh
-```
+启动成功后，您可以通过以下地址访问：
 
----
+- **🖥️ 前端应用**: `http://localhost:5173`
+- **⚙️ 后端服务**: `http://localhost:3000`
 
-## 🤝 贡献
+## 📸 项目截图
 
-欢迎对本项目进行贡献！如果您有任何想法或建议，请随时提交 Pull Request 或创建 Issue。
+![image](./frontend/public/images/logos/image.png)
+
+## 🤝 贡献指南
+
+我们非常欢迎来自社区的贡献！如果您有任何好的想法或发现了 Bug，请随时通过以下方式参与：
+
+- **提交 Issue**: 报告 Bug 或提出功能建议。
+- **提交 Pull Request**: 改进代码、添加新功能或修复问题。
+
+我们期待您的参与！
+
+## 📄 许可证
+
+本项目基于 MIT License 开源。
