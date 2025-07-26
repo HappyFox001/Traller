@@ -1,5 +1,6 @@
 <div align="center">
-  <img src="./frontend/public/images/logos/logo title main-64.png" alt="Traller Logo" width="128"/>
+  <!-- Increase the logo image size for better visibility -->
+  <img src="./frontend/public/images/logos/logo title main-64.png" alt="Traller Logo" width="256"/>
   <p>一个可视化的智能研究代理</p>
 </div>
 
@@ -20,6 +21,15 @@
 **Traller** 不仅仅是一个搜索引擎。它是一个智能研究代理，旨在将繁琐的信息搜集和整理工作，变成一次直观、可视化的探索之旅。你只需要输入一个关键词——比如一个人的名字——Traller 就会动用背后强大的语言模型（如 Gemini, Perplexity），为你挖掘相关信息，并自动梳理出核心实体与它们之间的复杂关系，最终以一张动态知识图谱清晰地呈现在你面前。
 
 这个项目源于一个简单的想法：让获取知识的过程本身，也充满探索的乐趣。
+
+## 📸 项目截图
+
+<!-- Arrange the two images side by side for better layout -->
+<p align="center">
+  <img src="./frontend/public/images/logos/image.png" alt="Screenshot 1" width="45%" style="display:inline-block; margin-right: 2%;" />
+  <img src="./frontend/public/images/logos/image2.png" alt="Screenshot 2" width="45%" style="display:inline-block;" />
+</p>
+
 
 ### ✨ 核心功能
 
@@ -74,10 +84,6 @@ chmod +x ./start.sh
 
 - **🖥️ 前端应用**: `http://localhost:5173`
 - **⚙️ 后端服务**: `http://localhost:3000`
-
-## 📸 项目截图
-
-![image](./frontend/public/images/logos/image.png)
 
 ## 🤝 贡献指南
 
