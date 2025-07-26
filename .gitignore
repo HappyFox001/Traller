@@ -1,21 +1,25 @@
-# 环境配置文件
+# Environment configuration files
 .env
 
-# 依赖目录
+# Dependency directories
 node_modules/
 */node_modules/
 
 build/
 *.tsbuildinfo
 
-# 日志文件
+# Exclude all dist folders and their contents everywhere in the project
+dist/
+**/dist/
+
+# Log files
 logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# IDE配置
+# IDE configuration
 .vscode/
 .idea/
 *.swp
