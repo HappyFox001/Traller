@@ -14,7 +14,7 @@ export default defineConfig({
     allowedHosts: ["traller.shop", "localhost", "127.0.0.1"],
     proxy: {
       "/api": {
-        target: "http://localhost:3000",
+        target: "https://traller.shop",
         changeOrigin: true,
       },
     },
