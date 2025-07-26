@@ -31,7 +31,6 @@ Traller 是一个专注于「人物搜索与画像」的 AI 智能体。它不�
   <img src="./frontend/public/images/logos/image2.png" alt="Screenshot 2" width="45%" style="display:inline-block;" />
 </p>
 
-
 ### ✨ 核心功能
 
 - **多AI引擎驱动**: 集成 `Kimi K2`, `Perplexity`, `Tavily` 等多种AI服务，从不同维度搜集和分析信息。
